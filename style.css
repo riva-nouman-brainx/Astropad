@@ -120,10 +120,6 @@ th {
 .three-lines {
   display: none;
 }
-.card-wrapper {
-  /* height: 47vh; */
-  background-color: #eb0c50;
-}
 .white-card {
   border-radius: 20.459px;
   border: 1px solid #000;
