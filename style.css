@@ -23,13 +23,12 @@ body {
   color: #eb0c50;
   font-size: 2.4rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 .rating-text {
   color: grey;
-  margin-left: 10px;
-  font-size: x-large;
+  font-size: 1.4rem;
 }
 .landing-page-button {
   background-color: #000;
@@ -50,6 +49,9 @@ body {
 .landing-page-button:hover {
   background-color: #eb0c50;
 }
+.img-container {
+  margin-top: 0px; /* Adjust the value as needed */
+}
 
 .table-container {
   display: flex;
@@ -68,6 +70,7 @@ thead tr th:nth-child(2) {
   border-radius: 15px 15px 0 0;
   color: white;
   background-color: #eb0c50;
+  width: 28%;
 }
 
 tbody tr:nth-of-type(odd) {
@@ -78,6 +81,7 @@ tbody tr:nth-of-type(even) {
 }
 
 th img {
+  margin-top: 0rem;
   margin-bottom: 1rem; /* Adjust spacing between image and text */
   width: 48px;
   height: 52px;
@@ -90,8 +94,8 @@ th:first-child {
 td,
 th {
   text-align: center;
-  padding: 25px;
-  background-color: #fff; /* or any uniform color you prefer */
+  padding: 20px;
+  background-color: #fff;
 }
 .design-text {
   color: #000;
@@ -142,7 +146,6 @@ th {
   color: white;
   position: relative;
   overflow: hidden; /* Ensure image doesn't overflow the card */
-  /* height: 400px; */
 }
 
 .background-image-dog {
@@ -151,9 +154,9 @@ th {
   left: 0;
   width: auto;
   height: auto;
-  max-width: 100px; /* Adjust size as necessary */
-  max-height: 100px; /* Adjust size as necessary */
-  opacity: 0.5; /* Adjust transparency as necessary */
+  max-width: 150px;
+  max-height: 150p5;
+  opacity: 0.5; /* A5just transparency as necessary */
 }
 .red-text {
   color: #eb0c50;
@@ -200,16 +203,22 @@ th {
   font-weight: 500;
   line-height: 148%; /* 38.847px */
 }
+.no-padding {
+  padding-right: 0 !important;
+}
 
 @media only screen and (max-width: 1400px) {
   .landing-page-button-text {
     font-size: 1.5rem;
   }
   .create-text {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .free-trail-text {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
+  }
+  .rating-text {
+    font-size: 1.2rem;
   }
 }
 
@@ -223,11 +232,14 @@ th {
   .free-trail-text {
     font-size: 2rem;
   }
+  .rating-text {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .landing-page-button-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -237,22 +249,22 @@ th {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    gap: 1rem;
   }
   .create-text {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.3rem;
   }
   .free-trail-text {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.6rem;
   }
-  .rating-text {
-    font-size: 22px;
-  }
-  .buttons-wrapper {
+
+  /* .buttons-wrapper {
     margin-left: 40px;
     margin-right: 40px;
-  }
+  } */
   .desktop-brands {
     display: none;
   }
@@ -297,11 +309,36 @@ th {
   .landing-page-button {
     padding: 1rem 2rem 1rem 2rem;
   }
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  td,
+  th {
+    font-size: 0.8rem;
+    max-width: 25%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   th img {
     width: 38px;
     height: 42px;
+  }
+  td,
+  th {
+    font-size: 0.5rem;
+    max-width: 25%;
+  }
+
+  .create-text {
+    font-size: 2.5rem;
+  }
+  .free-trail-text {
+    font-size: 1.3rem;
+  }
+  .rating-text {
+    font-size: 1.1rem;
   }
 }
