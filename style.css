@@ -192,6 +192,7 @@ th {
   font-style: normal;
   font-weight: 600;
   line-height: 148%; /* 47.952px */
+  letter-spacing: 0.1em;
 }
 .username-text {
   color: #eb0c50;
@@ -313,11 +314,40 @@ th {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   td,
   th {
     font-size: 0.8rem;
     max-width: 25%;
+  }
+  .black-card {
+    border-radius: 0px 0px 20.5px 20.5px;
+  }
+  .white-card {
+    border: none;
+  }
+  .red-text {
+    font-size: 1.3rem;
+    text-shadow: none;
+    font-weight: 700;
+  }
+  .red-text-black {
+    font-size: 1.5rem;
+  }
+  .normal-card-text-black {
+    font-size: 1.1rem;
+  }
+  .normal-card-text-white {
+    font-size: 1.1rem;
+  }
+  .username-text {
+    text-shadow: none;
+    margin-left: 2px;
+  }
+  .name-text {
+    text-shadow: none;
+    letter-spacing: 0.05em;
   }
 }
 
