@@ -14,27 +14,26 @@ body {
 
 .create-text {
   color: #000;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .free-trail-text {
   color: #eb0c50;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .rating-text {
   color: grey;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .landing-page-button {
   background-color: #000;
   border-radius: 11px;
   display: flex;
-  justify-content: center;
   padding: 1.2rem 0rem 1.2rem 0rem;
   color: white;
 }
@@ -42,12 +41,30 @@ body {
   color: white;
   font-size: 1.5rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   white-space: nowrap;
 }
+.icon-container {
+  width: 3.5rem; /* Ensure all icons have the same width */
+  height: 3.5rem; /* Ensure all icons have the same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .landing-page-button:hover {
   background-color: #eb0c50;
+}
+.landing-page-button:hover #img-1 {
+  content: url(assets/images/message-hover.svg);
+}
+
+.landing-page-button:hover #img-2 {
+  content: url(assets/images/apple-hover.svg);
+}
+
+.landing-page-button:hover #img-3 {
+  content: url(assets/images/google-hover.png);
 }
 .img-container {
   margin-top: 0px; /* Adjust the value as needed */
@@ -57,7 +74,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 tbody tr:nth-child(odd) td:nth-child(2),
@@ -70,7 +87,7 @@ thead tr th:nth-child(2) {
   border-radius: 15px 15px 0 0;
   color: white;
   background-color: #eb0c50;
-  width: 28%;
+  width: 18%;
 }
 
 tbody tr:nth-of-type(odd) {
@@ -83,8 +100,8 @@ tbody tr:nth-of-type(even) {
 th img {
   margin-top: 0rem;
   margin-bottom: 1rem; /* Adjust spacing between image and text */
-  width: 48px;
   height: 52px;
+  width: 48px;
 }
 td:first-child,
 th:first-child {
@@ -96,21 +113,33 @@ th {
   text-align: center;
   padding: 20px;
   background-color: #fff;
+  font-size: 1.5rem;
 }
 .design-text {
   color: #000;
-  font-size: 50px;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  letter-spacing: 0.05em;
 }
 .liscense-text {
   color: #000;
   font-family: "OpenSans";
-  font-size: 30px;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   line-height: normal;
+}
+.trusted-text {
+  color: #000;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
 }
 .desktop-brands {
   display: block;
@@ -126,19 +155,18 @@ th {
 }
 .white-card {
   border-radius: 20.459px;
-  border: 1px solid #000;
   background: #fff;
   box-shadow: 0px 3.53px 30.884px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1.5rem;
+  padding: 10%;
 }
 .black-card {
   border-radius: 20.459px;
   border: 1px solid #000;
   background: linear-gradient(232deg, #2d2d2d 8.61%, #000 87.74%);
-  padding: 1.7rem 1rem 4.7rem 1rem;
+  padding: 12% 12% 15% 12%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -150,8 +178,8 @@ th {
 
 .background-image-dog {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 1.3rem;
+  left: 0.8rem;
   width: auto;
   height: 5.5rem;
   max-width: 150px;
@@ -160,13 +188,12 @@ th {
 }
 .red-text {
   color: #eb0c50;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 .red-text-black {
   color: #eb0c50;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 600;
 }
 .normal-card-text-black {
@@ -186,47 +213,50 @@ th {
 
 .name-text {
   color: #000;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 148%; /* 47.952px */
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 .username-text {
   color: #eb0c50;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
   /* font-family: "Visby CF"; */
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 148%; /* 38.847px */
+  letter-spacing: 0.05em;
 }
-.no-padding {
-  padding-right: 0 !important;
+.text-container-padding {
+  padding: 10%;
+}
+.card-wrapper {
+  margin-top: -60px;
 }
 
+@media only screen and (min-width: 786px) {
+  .top-container {
+    margin-bottom: 5rem;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .landing-page-button-text {
     font-size: 1.5rem;
   }
   .create-text {
-    font-size: 3.3rem;
+    font-size: 3.1rem;
   }
   .free-trail-text {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
   .rating-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .white-card {
     padding: 1.5rem;
   }
-  .black-card {
+  /* .black-card {
     padding: 2.2rem 1rem 3.7rem 1rem;
-  }
+  } */
   .red-text {
     font-size: 1.3rem;
   }
@@ -244,23 +274,36 @@ th {
     font-size: 1.3rem;
   }
   .create-text {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .free-trail-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .rating-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .landing-page-button-text {
+    font-size: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .create-text {
+    font-size: 2rem;
+  }
+  .free-trail-text {
     font-size: 1.2rem;
+  }
+  .rating-text {
+    font-size: 0.7rem;
+  }
+  .background-image-dog {
+    opacity: 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .rating-text {
     display: flex;
     flex-direction: column;
@@ -277,19 +320,15 @@ th {
     text-align: center;
     font-size: 1.6rem;
   }
-
-  /* .buttons-wrapper {
-    margin-left: 40px;
-    margin-right: 40px;
-  } */
   .desktop-brands {
     display: none;
   }
   .mobile-brands {
     display: block;
   }
-  .design-text {
-    font-size: 30px;
+  .design-text,
+  .trusted-text {
+    font-size: 2rem;
   }
   .liscense-text {
     font-size: 20px;
@@ -331,21 +370,19 @@ th {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
   }
   td,
   th {
-    font-size: 0.8rem;
+    font-size: 1rem;
     max-width: 25%;
+    padding: 15px;
   }
   .black-card {
     border-radius: 0px 0px 20.5px 20.5px;
   }
-  .white-card {
-    border: none;
-  }
   .red-text {
     font-size: 1.3rem;
-    text-shadow: none;
     font-weight: 700;
   }
   .red-text-black {
@@ -358,12 +395,19 @@ th {
     font-size: 1.1rem;
   }
   .username-text {
-    text-shadow: none;
     margin-left: 2px;
   }
-  .name-text {
-    text-shadow: none;
-    letter-spacing: 0.05em;
+  .icon-container {
+    width: 2rem; /* Ensure all icons have the same width */
+    height: 2rem; /* Ensure all icons have the same height */
+  }
+  .icon-container,
+  .instagram-container img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .background-image-dog {
+    opacity: 0.5;
   }
 }
 
@@ -374,8 +418,9 @@ th {
   }
   td,
   th {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     max-width: 25%;
+    padding: 10px;
   }
 
   .create-text {
@@ -386,5 +431,8 @@ th {
   }
   .rating-text {
     font-size: 1.1rem;
+  }
+  .landing-page-button-text {
+    font-size: 1.2rem;
   }
 }
