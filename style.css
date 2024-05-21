@@ -12,9 +12,13 @@ body {
   overflow-x: hidden;
 }
 
+/* .buttons-wrapper button {
+  padding: 20px 30px;
+} */
+
 .create-text {
   color: #000;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -34,6 +38,7 @@ body {
   background-color: #000;
   border-radius: 11px;
   display: flex;
+  justify-content: center;
   padding: 1.2rem 0rem 1.2rem 0rem;
   color: white;
 }
@@ -46,11 +51,8 @@ body {
   white-space: nowrap;
 }
 .icon-container {
-  width: 3.5rem; /* Ensure all icons have the same width */
-  height: 3.5rem; /* Ensure all icons have the same height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 3rem;
+  height: 3rem;
 }
 .landing-page-button:hover {
   background-color: #eb0c50;
@@ -101,7 +103,7 @@ th img {
   margin-top: 0rem;
   margin-bottom: 1rem; /* Adjust spacing between image and text */
   height: 52px;
-  width: 48px;
+  /* width: 48px; */
 }
 td:first-child,
 th:first-child {
@@ -133,7 +135,7 @@ th {
 }
 .trusted-text {
   color: #000;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -188,25 +190,25 @@ th {
 }
 .red-text {
   color: #eb0c50;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 .red-text-black {
   color: #eb0c50;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 .normal-card-text-black {
   color: #000;
   /* font-family: "Visby CF"; */
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
 }
 .normal-card-text-white {
   color: white;
   /* font-family: "Visby CF"; */
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
 }
@@ -232,8 +234,26 @@ th {
 .card-wrapper {
   margin-top: -60px;
 }
+.profile-picture {
+  height: 60px;
+  width: 60px;
+}
+.banner-mobile {
+  display: none;
+}
+.banner-web {
+  display: block;
+}
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+}
 
-@media only screen and (min-width: 786px) {
+.icon-container img {
+  max-width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
   .top-container {
     margin-bottom: 5rem;
   }
@@ -241,6 +261,10 @@ th {
 @media only screen and (max-width: 1400px) {
   .landing-page-button-text {
     font-size: 1.5rem;
+  }
+  .icon-container {
+    height: 2.8rem;
+    width: 2.8rem;
   }
   .create-text {
     font-size: 3.1rem;
@@ -267,11 +291,28 @@ th {
   .normal-card-text-white {
     font-size: 1rem;
   }
+  .name-text {
+    font-size: 1.2rem;
+  }
+  .username-text {
+    font-size: 0.8rem;
+  }
+  .profile-picture {
+    height: 40px;
+    width: 40px;
+  }
+  .trusted-text {
+    font-size: 2.2rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .landing-page-button-text {
     font-size: 1.3rem;
+  }
+  .icon-container {
+    height: 2.5rem;
+    width: 2.5rem;
   }
   .create-text {
     font-size: 2.7rem;
@@ -282,12 +323,37 @@ th {
   .rating-text {
     font-size: 1rem;
   }
+  .red-text {
+    font-size: 1.2rem;
+  }
+  .red-text-black {
+    font-size: 1.4rem;
+  }
+  .normal-card-text-black,
+  .normal-card-text-white {
+    font-size: 1rem;
+  }
+
+  .name-text {
+    font-size: 1.2rem;
+  }
+  .username-text {
+    font-size: 0.8rem;
+  }
+  .profile-picture {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .landing-page-button-text {
-    font-size: 1rem;
-    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+  }
+  .icon-container {
+    height: 2.3rem;
+    width: 2.3rem;
   }
   .create-text {
     font-size: 2rem;
@@ -301,9 +367,15 @@ th {
   .background-image-dog {
     opacity: 0;
   }
+  .red-text {
+    font-size: 1rem;
+  }
+  .red-text-black {
+    font-size: 1.2rem;
+  }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .rating-text {
     display: flex;
     flex-direction: column;
@@ -326,9 +398,11 @@ th {
   .mobile-brands {
     display: block;
   }
-  .design-text,
-  .trusted-text {
+  .design-text {
     font-size: 2rem;
+  }
+  .trusted-text {
+    font-size: 1.3rem;
   }
   .liscense-text {
     font-size: 20px;
@@ -370,7 +444,6 @@ th {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 0px;
   }
   td,
   th {
@@ -398,22 +471,34 @@ th {
     margin-left: 2px;
   }
   .icon-container {
-    width: 2rem; /* Ensure all icons have the same width */
-    height: 2rem; /* Ensure all icons have the same height */
+    width: 2rem;
+    height: 2rem;
   }
-  .icon-container,
-  .instagram-container img {
-    max-width: 100%;
-    height: 100%;
+  .profile-picture {
+    height: 35px;
+    width: 35px;
   }
   .background-image-dog {
     opacity: 0.5;
+  }
+  .card-wrapper {
+    margin-top: 0px;
+  }
+  .banner-mobile {
+    display: block;
+  }
+  .banner-web {
+    display: none;
+  }
+  .instagram-icon {
+    width: 12px;
+    height: 12px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   th img {
-    width: 38px;
+    /* width: 38px; */
     height: 42px;
   }
   td,
@@ -434,5 +519,18 @@ th {
   }
   .landing-page-button-text {
     font-size: 1.2rem;
+  }
+  .red-text-black {
+    font-size: 1.3rem;
+  }
+  .red-text {
+    font-size: 1.1rem;
+  }
+  .normal-card-text-black,
+  .normal-card-text-white {
+    font-size: 0.9;
+  }
+  .trusted-text {
+    font-size: 1.4rem;
   }
 }
